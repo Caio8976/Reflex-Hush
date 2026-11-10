@@ -1,0 +1,21 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#101214">
+      <meta name="description" content="A tiny reaction game with a mean false start.">
+      <title>Reflex Rush</title>
+      <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+      <link rel="stylesheet" href="styles.css">
+      <style>:root{--accent:#b5f36a}.reaction-pad{min-height:310px;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#20252b;border:1px solid #3a4049;text-align:center}.reaction-pad #cue{font-size:clamp(1.6rem,4vw,2.8rem);letter-spacing:-.045em}.reaction-pad #detail{font-size:.85rem;font-weight:400;color:#bcc2cb}.reaction-pad[data-state=waiting]{background:#46391d;border-color:#b98a32}.reaction-pad[data-state=go]{background:#b5f36a;color:#101214}.reaction-pad[data-state=go] #detail{color:#263a16}#results{padding-left:24px;color:var(--muted);line-height:1.9}</style>
+    </head>
+    <body><div class="shell">
+      <header class="top"><div class="brand"><span>✳</span> Reflex Rush</div><div class="tag">Small experiments / 01</div></header>
+      <section class="intro"><div class="eyebrow">JavaScript · No dependencies</div><h1>Wait for green.<br>Then go.</h1><p>Five rounds. Random delays. Zero mercy for false starts. How steady is your reaction time?</p></section>
+      <main class="workspace">
+<section class="panel"><button id="pad" class="reaction-pad" aria-label="Reaction pad. Start a five-round game"><span id="cue">Ready when you are.</span><span id="detail">Click here or press Space to start</span></button><div class="stats"><div class="stat"><strong id="round">0 / 5</strong><span>ROUNDS</span></div><div class="stat"><strong id="median">—</strong><span>MEDIAN / MS</span></div><div class="stat"><strong id="best">—</strong><span>BEST SESSION / MS</span></div></div></section>
+<aside class="panel controls"><h2>The rules are simple.</h2><div class="note wide">Wait through the amber phase. React when the whole pad turns green. A false start restarts the current round.</div><div class="wide"><h2>This session</h2><ol id="results" aria-label="Round times"></ol></div><button id="reset" class="wide">Reset session</button><p id="announcement" class="status wide" role="status" aria-live="polite"></p><p class="small muted wide">A browser game, not a lab measurement. Hardware and browser timing affect results.</p></aside>
+</main>
+      <footer class="footer"><span>Reflex Rush / Built for the curious.</span><span>Local only · No account · No tracking</span></footer>
+    </div><script type="module" src="src/app.mjs"></script></body></html>

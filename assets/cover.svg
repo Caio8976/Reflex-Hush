@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="Reflex Rush: A tiny reaction game with a mean false start.">
+    <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.0196"/></pattern></defs>
+    <rect width="1280" height="400" rx="20" fill="#111419"/><rect width="1280" height="400" fill="url(#grid)"/>
+    <path d="M52 52H1228M52 348H1228" stroke="#30343b"/>
+    <text x="58" y="94" fill="#b5f36a" font-size="13" letter-spacing="3" font-family="monospace">SMALL EXPERIMENTS / 01</text>
+    <text x="54" y="205" fill="#f2f2ec" font-size="76" font-weight="700" letter-spacing="-3" font-family="sans-serif">Reflex Rush</text>
+    <text x="58" y="254" fill="#a9aeb8" font-size="20" font-family="sans-serif">A tiny reaction game with a mean false start.</text>
+    <text x="58" y="318" fill="#a9aeb8" font-size="12" font-family="monospace">JAVASCRIPT / NO DEPENDENCIES / MIT</text>
+    <g transform="translate(900 40)" color="#b5f36a"><path d="M80 80H245V245H80Z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M179 101L133 169H168L151 222L204 151H170Z" fill="currentColor"/></g></svg>
